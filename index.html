@@ -3,20 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Local Storage</title>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <body>
-    <div>
-        <h1>Signup</h1>
-        <input type="email" id="email">
-        <br>
-        <input type="password" id="password">
-        <br>
-        <button onclick="signUp()">Signup</button>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 one">
+                <div class="sec-1">
+                    <h1>Registration Page</h1>
+                    <div class="para">
+                    <p>Sign up to register</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 two">
+                <div class="sec-2">
+                    <h1>Signup</h1>
+                    <form action="login.html" class="form-group">
+                        <input type="email" id="email" class="form-control" placeholder="Enter your Email">
+                        <br>
+                        <input type="password" id="password" class="form-control" placeholder="Enter your Password">
+                        <br>
+                        <button onclick="signUp()">Signup</button>
+                        <p>already have an account? <a href="login.html">Click here</a></p>
+                    </form>
+                </div>
+        </div>
+        </div>
     </div>
-
+    <script src="bootstrap-5.3.7-dist/js/bootstrap.min.js"></script>
     <script src="app.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>

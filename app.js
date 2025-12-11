@@ -8,8 +8,6 @@ function signUp(){
         Toastify({
   text: "please enter email and password",
   duration: 3000,
-//   destination: "https://github.com/apvarun/toastify-js",
-//   newWindow: true,
   close: true,
   gravity: "top", // `top` or `bottom`
   position: "left", // `left`, `center` or `right`

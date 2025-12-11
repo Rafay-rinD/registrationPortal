@@ -3,20 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Local Storage</title>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <body>
-    <div>
-        <h1>Login</h1>
-        <input type="email" id="email">
-        <br>
-        <input type="password" id="password">
-        <br>
-        <button onclick="login()">Login</button>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 one">
+                <div class="sec-1">
+                    <h1>Login Page</h1>
+                    <div class="para">
+                    <p>Login up to your account</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 two">
+                <div class="sec-2">
+                    <h1>Login</h1>
+                    <form action="welcome.html" class="form-group">
+                        <input type="email" id="email" class="form-control" placeholder="Enter your Email">
+                        <br>
+                        <input type="password" id="password" class="form-control" placeholder="Enter your Password">
+                        <br>
+                        <button onclick="login()">Login</button>
+                        <p>Don't have an account? <a href="index.html">Create an account</a></p>
+                    </form>
+                </div>
+        </div>
+        </div>
     </div>
-
+    <script src="bootstrap-5.3.7-dist/js/bootstrap.min.js"></script>
     <script src="login.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
